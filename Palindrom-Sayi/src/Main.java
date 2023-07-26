@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Main {
-    static boolean isPolindrom(int number){
+    static boolean isPalindrom(int number){
         int temp = number, reverseNumber =0,lastNumber;
         while(temp != 0){
             lastNumber = temp % 10;
@@ -18,6 +18,6 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         System.out.println("Bir sayı giriniz.");
         input = sc.nextInt();
-        System.out.println(isPolindrom(input));
+        System.out.println(isPalindrom(input));
     }
 }
