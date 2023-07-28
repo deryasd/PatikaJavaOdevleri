@@ -118,13 +118,16 @@ public class Main {
             System.out.println("Sonuç : " + result);
         }
 
-        static void squareAreaAndPerimeter(){
+        static void rectangleAreaAndPerimeter(){
             Scanner scan = new Scanner(System.in);
-            System.out.println("Karenin bir kenar uzunluğunu giriniz.");
+            System.out.println("Dikdörtgenin uzun kenar uzunluğunu giriniz.");
             int edge = scan.nextInt();
-
-            System.out.println("Karenin çevresi :" + (edge*4)+
-                    "Karenin alanı : " + Math.pow(edge,2));
+            System.out.println("Dikdörtgenin kısa kenar uzunluğunu giriniz.");
+            int edgeShort = scan.nextInt();
+            int perimeter = (edge*2) + (edgeShort*2);
+            int area = edge * edgeShort;
+            System.out.println("Dikdörtgenin çevresi :" + perimeter+
+                    "Dikdörtgenin alanı : " + area);
         }
 
         public static void main(String[] args) {
@@ -167,7 +170,7 @@ public class Main {
                         mod();
                         break;
                     case 8:
-                        squareAreaAndPerimeter();
+                        rectangleAreaAndPerimeter();
                         break;
                     case 0:
                         break;
